@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="file_css/Contact.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="file_js/Contact.js"></script>
+    <link rel="shortcut icon" href="images/icon.png">
+    <title>TOP FLOWERS - Liên hệ</title>
+</head>
+<body>
+    <header class="flex">
+        <div></div>
+        <div class="logo"><a href="Homepage.html"><img src="images/logo-top-flowers.png" alt="logo"></a></div>
+        <div class="info flex">
+            <div class="user">
+                <i style="color:palevioletred; cursor: pointer ;" class="fa-solid fa-user"></i>
+                <div class="input">
+                    <input type="text" placeholder="Tên đăng nhập">
+                    <input type="password" placeholder="Mật khẩu">    
+                    <div><input type="button" value="Đăng Nhập"></div>
+                    <div><input type="button" value="Đăng Kí"></div>
+                </div>
+            </div>
+            <div class="item">
+                <i style="color:palevioletred;cursor: pointer ; " class="fa-solid fa-cart-shopping"></i>
+                <div>
+                    <div class="container">     
+                    </div>  
+                    <div class="order-button"><button>Thanh toán</button></div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <nav>
+        <ul class="menu flex">
+            <li><a href="Homepage.html">Trang chủ</a></li>
+            <li><a href="#">Chủ đề</a>
+                <ul class="sub-menu">
+                    <li><a href="Birthday_flower.html">Hoa sinh nhật</a></li>
+                    <li><a href="#">Hoa khai trương</a></li>
+                    <li><a href="#">Hoa chúc mừng</a></li>
+                    <li><a href="#">Hoa tình yêu</a></li>
+                    <li><a href="#">Hoa chúc sức khỏe</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Đối tượng</a>
+                <ul class="sub-menu">
+                    <li><a href="#">Hoa tặng người yêu</a></li>
+                    <li><a href="#">Hoa tặng vợ</a></li>
+                    <li><a href="#">Hoa tặng chồng</a></li>
+                    <li><a href="#">Hoa tặng đồng nghiệp </a></li>
+                    <li><a href="#">Hoa tặng bạn bè</a></li>
+                </ul></li>
+            <li><a href="#">Kiểu dáng</a>
+                <ul class="sub-menu">
+                    <li><a href="#">Bó hoa tươi</a></li>
+                    <li><a href="#">Hộp hoa tươi</a></li>
+                    <li><a href="#">Giỏ hoa tươi</a></li>
+                    <li><a href="#">Lẵng hoa tươi</a></li>
+                </ul></li></li>
+            <li><a href="#">Màu sắc</a>
+                <ul class="sub-menu">
+                    <li><a href="#">Màu đỏ</a></li>
+                    <li><a href="#">Màu hồng</a></li>
+                    <li><a href="#">Màu trắng</a></li>
+                    <li><a href="#">Màu xanh</a></li>
+                    <li><a href="#">Màu vàng</a></li>
+                </ul></li>  </li>
+            <li><a href="#">Ý nghĩa hoa</a></li>
+            <li><a href="Contact.html">Liên hệ</a></li>
+            <div class="search-container flex">
+                <div class="search-box"><input type="text" placeholder="Tìm kiếm"></div>
+                <div class="search-btn"><button><i class="fa-solid fa-magnifying-glass"></i></button></div>
+            </div>
+        </ul>
+    </nav>
+
+    <section class="infomation flex">
+        <div>
+            <h2>Trụ sở chính</h2>
+            <div>35-37 Hồ Hảo Hớn, Phường Cô Giang, Quận 1, Tp.HCM</div>
+            <div>SDT: 0123456789</div>
+        </div>
+        <div>
+            <h2>Chi nhánh</h2>
+            <div>371-Nguyễn Kiệm, phường 3, Gò Vấp, Tp.HCM</div>
+            <div>SDT: 0987654321</div>
+        </div>
+        <div>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15678.614941135324!2d106.6923099!3d10.7611471!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x3f198b980ca59fdf!2zVHLGsOG7nW5nIMSQ4bqhaSBo4buNYyBN4bufIFRQLkhDTSAtIEPGoSBz4bufIDI!5e0!3m2!1svi!2s!4v1660380139051!5m2!1svi!2s" style="border:1;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </section>
+    <section id="send">
+        <h1>LIÊN HỆ TRỰC TUYẾN</h1>
+        <table>
+            <tr>
+                <td><input id="name" type="text" placeholder="Họ và tên"/></td>
+                <td><input id="email" type="text" placeholder="Thư điện tử"/></td>
+            </tr>
+            <tr>
+                <td><input id="address" type="text" placeholder="Địa chỉ"/></td>
+                <td><input id="phoneNum" type="text" placeholder="Số điện thoại"/></td>
+            </tr>
+            <tr>
+                <td colspan="2"><input id="title" type="text" placeholder="Chủ đề"/></td>
+            </tr>
+            <tr>
+                <td colspan="2"><textarea id="sub" placeholder="Nội dung" name="content" id="" cols="30" rows="10"></textarea></td>
+            </tr>
+            <tr>
+                <td colspan="2"><button id="send-text-btn">Gửi tin nhắn</button></td>
+            </tr>
+        </table>
+    </section>
+
+
+    <footer class="contact flex">
+        <ul>
+           <h3>CHĂM SÓC KHÁCH HÀNG</h3>
+           <li><a href="#">Giới thiệu</a></li>
+           <li><a href="#">Liên hệ</a></li>
+           <li><a href="#">Chính sách</a></li>
+           <li><a href="#">Câu hỏi thường gặp</a></li>
+           <li><a href="#">Bảo mật</a></li> 
+        </ul>
+        <ul>
+            <h3>THEO DÕI TOP FLOWERS</h3>
+            <li><a href="#"><i style="color:darkblue;" class="fa-brands fa-facebook fa-2x"></i></a></li>
+            <li><a href="#"><i style="color:lightblue" class="fa-brands fa-twitter fa-2x"></i></a></li>
+            <li><a href="#"><i style="color:red" class="fa-brands fa-youtube fa-2x"></i></a></li>
+            <li><a href="#"><i style="color:orangered;" class="fa-brands fa-instagram fa-2x"></i></a></li>
+        </ul>
+        <ul>
+            <h3>CÁC CHI NHÁNH CỦA TOP FLOWERS</h3>
+            <li>371 Nguyễn Kiệm, Phường 3, Quận Gò Vấp, Tp.HCM</li>
+            <li>35-37 Hồ Hảo Hớn, Phường Cô Giang, Quận 1, Tp.HCM</li>
+        </ul>
+    </footer>
+    <nav class="scroll-top-btn">
+        <div><i style="color:white" class="fa-solid fa-angle-up fa-3x"></i></div>
+    </nav>
+    <nav id="chat-box">
+        <div id="fb-btn"><i class="fa-brands fa-facebook-messenger fa-4x"></i></div>
+        <div class="box">
+            <div class="flex">
+                <h2>CHAT VỚI TOP-FLOWERS</h2>
+                <div id="close-chat"><i class="fa-solid fa-xmark fa-2x"></i></div>
+            </div>   
+            <textarea name="" id="" cols="30" rows="5" placeholder="Nội dung"></textarea>
+            <button>Gửi</button>
+        </div>
+    </nav>
+</body>
+</html>

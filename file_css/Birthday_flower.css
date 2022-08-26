@@ -1,0 +1,453 @@
+.flex{
+    display: flex;
+}
+
+.logo{
+    text-align: center;
+}
+header {
+    justify-content: space-between;
+}
+header > div.info{
+    padding: 1% 7% 1% 0;
+}
+header > div.info > div{
+    padding:50%;
+    margin-left: 0;
+}
+.input{
+    padding:15%;
+    background-color: chocolate;
+    position: absolute;
+    left: -150%;
+    top:100%;
+    text-align: center;
+    display: none;
+    z-index: 2;
+}
+.user:hover >.input{
+    display: block;
+}
+.item:hover > div{
+    display:block;
+}
+.fa-trash{
+    cursor: pointer;
+    color:blue;
+}
+.input::after{
+    content:" ";
+    border-width: 10px;
+    border-style: solid;
+    position: absolute;
+    border-color: transparent transparent chocolate transparent;
+    bottom: 100%;
+    left:44%;
+}
+.input > div > input{
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    color: white;
+}
+.input > div{
+    margin: 5px;
+    padding: 5px;
+    background-color: blue;
+    cursor: pointer;
+    color: white;
+}
+.input > div:last-child{
+    background-color: gray;
+    border:solid 1px lightgray;
+}
+.item > div{
+    position: absolute;
+    left:80%;
+    z-index: 2;
+    background-color: rgb(180, 195, 209);
+    top:11%;
+    display: none;
+    width: 100%;
+    max-width: 19%;
+    padding: 3px;
+}
+.item > div::after{
+    content:" ";
+    border-width: 10px;
+    border-style: solid;
+    position: absolute;
+    border-color: transparent transparent rgb(180, 195, 209) transparent;
+    bottom:100%;
+    right:16%;
+
+}
+.item > div > div.container{
+    max-width: 100%;
+    max-height: 50%;
+}
+div.flex{
+    justify-content: space-between;
+}
+
+.item div.flex > div > img{
+    width: 100%;
+}
+.item > div div.flex > div:first-child{
+    width: 20%;
+}
+.item > div div.order-button {
+    text-align: center;
+    margin-top: 5%;
+}
+.item > div div.order-button > button{
+    background-color: aqua;
+    color: white;
+    border: none;
+    width: 60%;
+    cursor: pointer;
+}
+
+/* XONG HEADER */
+
+.user{
+    position: relative;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+.menu.fixed{/*Chuyen ul.menu thanh flex */
+    position: fixed;
+    width: 100%;
+    top:0;
+    margin-top: 0;
+}
+.menu{
+    list-style: none;
+    padding-left: 100px;
+    background-color: pink;
+    z-index: 1;
+}
+.menu > li{
+    padding:1% 3% ;
+    position: relative;
+    cursor: pointer;
+    z-index: 1;
+}
+.menu li a{
+    display: block !important;
+}
+
+.menu >li:hover{
+    background-color: antiquewhite;
+    color:rgba(173, 27, 8, 0.603)
+}
+
+.sub-menu{
+    list-style: none;
+    padding: 0;
+    position: absolute;
+    background-color: pink;
+    left: 0;
+    width: 150%;
+    top:43px;
+}
+.sub-menu > li{
+    padding: 15px;
+    cursor: pointer;
+    background-color: pink;
+    color: black;
+    display: none;
+}
+.sub-menu li a{
+    display: block;
+}
+
+.menu > li:hover > ul.sub-menu > li{
+    display: block;
+}
+.sub-menu > li:hover{
+    background-color: antiquewhite;
+    color:rgba(173, 27, 8, 0.603)
+}
+.search-container{
+    margin-top: 1%;
+    margin-left: 2%;
+}
+.search-box > input{
+    width: 115%;  
+    border-radius: 30px;
+    border-color: transparent;
+}
+.search-btn > button{
+    border-color: transparent;
+    background-color: transparent;
+    cursor: pointer;
+}
+/* Ket thuc logo + menu */
+h1{
+    text-align: center;
+    color: palevioletred;
+    text-decoration: underline;
+}
+.page-number{
+    color: black;
+    background-color: white;
+    list-style: none;
+    margin: 0;
+    padding-left: 17%;
+}
+.page-number > li > button{
+    cursor: pointer;
+    padding: 5px 35px;
+}
+.page-number > li > button:hover{
+    background-color: blue;
+    color: white;
+}
+.find-item{
+    justify-content: left !important;
+}
+.find-box{
+    padding: 0;
+    justify-content: space-around;
+}
+/* xong css phan so trang + tim kiem */
+
+.content{
+    text-align: center;
+    width: 25%;
+    box-sizing: border-box;
+    font-weight: bold;
+    position: relative;
+    margin-right: 15px;
+}
+.content-container{
+    margin:5px 100px;
+    flex-wrap: wrap;
+}
+.content-img{
+    padding: 0;
+    position: relative;
+}
+.content-img > img{
+    width: 100%;
+    height: 250px;
+    border-radius: 15px;
+    padding: 0;
+}
+.hover-bg{
+    width: 0;
+    height: 250px;
+    border-radius: 15px;
+    padding: 0;
+    background-color: gray;
+    position: absolute;
+    top:0;
+    transition:width 0.5s ease-in-out;
+    opacity: 0.5;
+}
+.content-img:hover div.hover-bg{
+    width: 100%;
+}
+.content-img:hover div.hover-bg input{
+    display: block;
+}
+.money{
+    color:red ;
+}
+.btn{
+    background-color:cyan;
+    border-radius: 10px;
+    width: 50%;
+    border: transparent;
+    margin: 45% 25%;
+    display: none;
+    cursor: pointer;
+    color:red;
+    font-weight:bold;
+}
+.fa-star, .fa-star-half{
+    color: gold;
+}
+.items{
+    margin-top: 30px;
+}
+.name-item{
+    cursor: pointer;
+}
+
+/* Xong phan cac san pham */
+
+nav.scroll-top-btn > div{
+    border-radius: 50%;
+    text-align: center;
+    width: 50px;
+    background-color: tomato;
+    position: fixed;
+    bottom: 1%;
+    right: 1%;
+    cursor: pointer;
+}
+/* Nut scroll top */
+
+
+footer.flex{
+    border-bottom: 1px solid gray;
+    justify-content: space-between;
+    margin: 50px 100px;
+}
+footer.flex > div{
+    width: 32%;
+    text-align: center;
+}
+footer.flex.contact{
+    border: none;
+}
+footer.flex.contact > ul{
+    list-style: none;
+}
+/* bat dau css nut chat messenger */
+#chat-box{
+    border-radius: 15px;
+    position: fixed;
+    bottom: 5px;
+    left: 10px;
+    cursor: pointer;
+    width: 30%;
+}
+#fb-btn{
+    position: absolute;
+    top:-65px;
+}
+.box{
+    cursor:initial;
+    display: none;    
+}
+#chat-box .box div.flex{
+    align-items: center;
+    justify-content: space-around;
+}
+textarea{
+    width: 50%;
+}
+.fa-facebook-messenger{
+    color:rgb(223, 154, 6);
+}
+#chat-box{
+    background-color: papayawhip;
+    
+}
+#close-chat{
+    cursor: pointer;
+}
+#chat-box .box button{
+    position: relative;
+    bottom: 7px;
+    padding: 1px 15px;
+    cursor: pointer;
+}
+/* Xong phan lien he- contact */
+.content h3{
+    margin: 0;
+}
+/* responsive design */
+@media (max-width:1000px) {
+    .menu.fixed{
+        width:90%;
+    }
+}
+@media (max-width: 860px) {
+    *{
+        font-size: small;
+    }
+    .input{
+        padding: 5px;
+        left:-55px;
+        top:30px;
+    }
+    .search-box > input{
+        display: none;
+    }
+    .search-container:hover > .search-box > input{
+        display: block;
+    }
+    .recommended-img{
+        display: none;
+    }
+    .content-container{
+        flex-direction: column;
+        margin-left: 25%;
+    }
+    .content{
+        margin: 0;
+        width: 100%;
+    }
+    footer.sup img{
+        width: 25%;
+    }
+    footer{
+        margin-left: 10px !important;
+    }
+    header.flex{
+        flex-direction: column;
+    }
+    div.item > div{
+        width: 50px;
+    }
+    .info{
+        width: 25px;
+    }
+    .input::after{
+        display: none;
+    }
+    .input{
+        left: 15px;
+    }
+    .item > div::after{
+       display: none;
+    }
+    .item > div{
+        top:125px;
+        left:30px;
+        width: 150px !important;
+    }
+    .container{
+        max-width: 100px !important;
+    }
+    .container > div.flex{
+        flex-direction: column;
+        width: 150px;
+    }
+    i.fa-angle-left, i.fa-angle-right{
+        font-size: small;
+    }
+    .page-number > li > button{
+        padding:1px;
+    }
+    .menu.fixed{
+        width:85%;
+    }
+}
+@media (max-width:500px) {
+    .menu{
+        flex-direction:column ;
+        padding-left: 0;
+    }
+    .menu.fixed{
+        width: 100%;
+        position: initial !important;
+    }
+    .sub-menu{
+        width: 100%;
+        left:100%;
+        top: 0%;
+    }
+    .search-container{
+        width: 50%;
+    }
+    .menu > li{
+        width: 25%;
+    }
+}

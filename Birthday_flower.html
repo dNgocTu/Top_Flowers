@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="file_css/Birthday_flower.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="file_js/Birthday_flower.js"></script>
+    <link rel="shortcut icon" href="images/icon.png">
+    <title>TOP FLOWERS - ĐẶT HOA SINH NHẬT</title>
+</head>
+<body>
+    <header class="flex">
+        <div></div>
+        <div class="logo"><a href="Homepage.html"><img src="images/logo-top-flowers.png" alt="logo"></a></div>
+        <div class="info flex">
+            <div class="user">
+                <i style="color:palevioletred; cursor: pointer ;" class="fa-solid fa-user"></i>
+                <div class="input">
+                    <input type="text" placeholder="Tên đăng nhập">
+                    <input type="password" placeholder="Mật khẩu">    
+                    <div><input type="button" value="Đăng Nhập"></div>
+                    <div><input type="button" value="Đăng Kí"></div>
+                </div>
+            </div>
+            <div class="item">
+                <i style="color:palevioletred;cursor: pointer ; " class="fa-solid fa-cart-shopping"></i>
+                <div>
+                    <div class="container">     
+                    </div>  
+                    <div class="order-button"><button>Thanh toán</button></div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <nav>
+        <ul class="menu flex">
+            <li><a href="Homepage.html">Trang chủ</a></li>
+            <li><a href="#">Chủ đề</a>
+                <ul class="sub-menu">
+                    <li><a href="Birthday_flower.html">Hoa sinh nhật</a></li>
+                    <li><a href="#">Hoa khai trương</a></li>
+                    <li><a href="#">Hoa chúc mừng</a></li>
+                    <li><a href="#">Hoa tình yêu</a></li>
+                    <li><a href="#">Hoa chúc sức khỏe</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Đối tượng</a>
+                <ul class="sub-menu">
+                    <li><a href="#">Hoa tặng người yêu</a></li>
+                    <li><a href="#">Hoa tặng vợ</a></li>
+                    <li><a href="#">Hoa tặng chồng</a></li>
+                    <li><a href="#">Hoa tặng đồng nghiệp </a></li>
+                    <li><a href="#">Hoa tặng bạn bè</a></li>
+                </ul></li>
+            <li><a href="#">Kiểu dáng</a>
+                <ul class="sub-menu">
+                    <li><a href="#">Bó hoa tươi</a></li>
+                    <li><a href="#">Hộp hoa tươi</a></li>
+                    <li><a href="#">Giỏ hoa tươi</a></li>
+                    <li><a href="#">Lẵng hoa tươi</a></li>
+                </ul></li></li>
+            <li><a href="#">Màu sắc</a>
+                <ul class="sub-menu">
+                    <li><a href="#">Màu đỏ</a></li>
+                    <li><a href="#">Màu hồng</a></li>
+                    <li><a href="#">Màu trắng</a></li>
+                    <li><a href="#">Màu xanh</a></li>
+                    <li><a href="#">Màu vàng</a></li>
+                </ul></li>  </li>
+            <li><a href="#">Ý nghĩa hoa</a></li>
+            <li><a href="Contact.html">Liên hệ</a></li>
+            <div class="search-container flex">
+                <div class="search-box"><input type="text" placeholder="Tìm kiếm"></div>
+                <div class="search-btn"><button><i class="fa-solid fa-magnifying-glass"></i></button></div>
+            </div>
+        </ul>
+    </nav>
+    <section class="main-content">
+        <h1>HOA SINH NHẬT</h1>
+        <div class="find-box flex">
+            <div>
+                <ul class="page-number flex">
+                    <li><button>1</button></li>
+                    <li><button>2</button></li>
+                    <li><button>...</button></li>
+                    <li><button>15</button></li>
+                    <li><button>16</button></li>
+                    <li><button><i class="fa-solid fa-angle-right"></i></button></li>
+                    <li><button><i class="fa-solid fa-forward-step"></i></button></li>
+                </ul>
+            </div>
+            <div class="find-item flex">
+                <input id="keyword" type="text" placeholder="Nhập tên sản phẩm" onchange="myFunc()">
+            </div>
+        </div>
+        <nav class="items">
+            <div class="content-container flex">
+                <div class="content">
+                    <div class="content-img"><img class="contentImg" src="images/popular/coral-blue.jpg" alt="coral-blue">
+                        <div class="hover-bg">
+                            <input class="btn" type="button" value="THÊM VÀO GIỎ">
+                        </div>
+                    </div>
+                    <h3 class="name-item"><a href="CoralBlue.html">Coral Blue</a></h3>
+                    <div><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></div>
+                    <div class="money">560.000VND</div>
+                </div>
+                <div class="content">
+                    <div class="content-img"><img class="contentImg" src="images/popular/mot-tinh-yeu.jpg" alt="mot-tinh-yeu">
+                        <div class="hover-bg">
+                            <input class="btn" type="button" value="THÊM VÀO GIỎ">
+                        </div>
+                    </div>
+                    <h3 class="name-item">One Love</h3>
+                    <div><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-half"></i></div>
+                    <div class="money"> 420.000VND</div>
+                </div>
+                <div class="content">
+                    <div class="content-img"><img class="contentImg" src="images/popular/red-wine.jpg" alt="red-wine">
+                        <div class="hover-bg">
+                            <input class="btn" type="button" value="THÊM VÀO GIỎ">
+                        </div>
+                    </div>
+                    <h3 class="name-item">Red Wine</h3>
+                    <div><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></div>
+                    <div class="money">530.000VND</div>
+                </div>
+                <div class="content">
+                    <div class="content-img"><img  class="contentImg" src="images/popular/rieng-minh-em.jpg" alt="rieng-minh-em">
+                        <div class="hover-bg">
+                            <input class="btn" type="button" value="THÊM VÀO GIỎ">
+                        </div>
+                    </div>
+                    <h3 class="name-item">Only You</h3>
+                    <div><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></div>
+                    <div class="money">310.000VND</div>
+                </div>
+                <div class="content">
+                    <div class="content-img"><img class="contentImg" src="images/new/hanh-phuc.jpg" alt="hanh-phuc">
+                        <div class="hover-bg">
+                            <input class="btn" type="button" value="THÊM VÀO GIỎ">
+                        </div>
+                    </div>
+                    <h3 class="name-item">Happy Day</h3>
+                    <div><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></div>
+                    <div class="money">400.000VND</div>
+                </div>
+                <div class="content">
+                    <div class="content-img"><img class="contentImg" src="images/new/milion-stars.jpg" alt="milion-stars">
+                        <div class="hover-bg">
+                            <input class="btn" type="button" value="THÊM VÀO GIỎ">
+                        </div>
+                    </div>
+                    <h3 class="name-item">Milion Stars</h3>
+                    <div><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-half"></i></div>
+                    <div class="money">850.000VND</div>
+                </div>
+                <div class="content">
+                    <div class="content-img"><img class="contentImg" src="images/new/quyen-ru.jpg" alt="quyen-ru">
+                        <div class="hover-bg">
+                            <input class="btn" type="button" value="THÊM VÀO GIỎ">
+                        </div>
+                    </div>
+                    <h3 class="name-item">Attractive</h3>
+                    <div><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></div>
+                    <div class="money">530.000VND</div>
+                </div>
+                <div class="content">
+                    <div class="content-img"><img  class="contentImg" src="images/new/yeu-me.jpg" alt="yeu-me">
+                        <div class="hover-bg">
+                            <input class="btn" type="button" value="THÊM VÀO GIỎ">
+                        </div>
+                    </div>
+                    <h3 class="name-item">Love You</h3>
+                    <div><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></div>
+                    <div class="money">820.000VND</div>
+                </div>
+                <div class="content">
+                    <div class="content-img"><img class="contentImg" src="images/grand_opening/cat-tuong.jpg" alt="cat-tuong">
+                        <div class="hover-bg">
+                            <input class="btn" type="button" value="THÊM VÀO GIỎ">
+                        </div>
+                    </div>
+                    <h3 class="name-item">Celebrity</h3>
+                    <div><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></div>
+                    <div class="money">1.140.000VND</div>
+                </div>
+                <div class="content">
+                    <div class="content-img"><img class="contentImg" src="images/grand_opening/hong-phat.jpg" alt="hong-phat">
+                        <div class="hover-bg">
+                            <input class="btn" type="button" value="THÊM VÀO GIỎ">
+                        </div>
+                    </div>
+                    <h3 class="name-item">Rich</h3>
+                    <div><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-half"></i></div>
+                    <div class="money">950.000VND</div>
+                </div>
+                <div class="content">
+                    <div class="content-img"><img class="contentImg" src="images/grand_opening/nhiet-huyet.jpg" alt="nhiet-huyet">
+                        <div class="hover-bg">
+                            <input class="btn" type="button" value="THÊM VÀO GIỎ">
+                        </div>
+                    </div>
+                    <h3 class="name-item">Enthusiasm</h3>
+                    <div><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></div>
+                    <div class="money">980.000VND</div>
+                </div>
+                <div class="content">
+                    <div class="content-img"><img  class="contentImg" src="images/grand_opening/tan-tai.jpg" alt="tan-tai">
+                        <div class="hover-bg">
+                            <input class="btn" type="button" value="THÊM VÀO GIỎ">
+                        </div>
+                    </div>
+                    <h3 class="name-item">Wonderful</h3>
+                    <div><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></div>
+                    <div class="money">2.300.000VND</div>
+                </div>
+            </div>
+        </nav>
+        <div class="find-box flex">
+            <div>
+                <ul class="page-number flex">
+                    <li><button>1</button></li>
+                    <li><button>2</button></li>
+                    <li><button>...</button></li>
+                    <li><button>15</button></li>
+                    <li><button>16</button></li>
+                    <li><button><i class="fa-solid fa-angle-right"></i></button></li>
+                    <li><button><i class="fa-solid fa-forward-step"></i></button></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <footer class="contact flex">
+        <ul>
+           <h3>CHĂM SÓC KHÁCH HÀNG</h3>
+           <li><a href="#">Giới thiệu</a></li>
+           <li><a href="#">Liên hệ</a></li>
+           <li><a href="#">Chính sách</a></li>
+           <li><a href="#">Câu hỏi thường gặp</a></li>
+           <li><a href="#">Bảo mật</a></li> 
+        </ul>
+        <ul>
+            <h3>THEO DÕI TOP FLOWERS</h3>
+            <li><a href="#"><i style="color:darkblue;" class="fa-brands fa-facebook fa-2x"></i></a></li>
+            <li><a href="#"><i style="color:lightblue" class="fa-brands fa-twitter fa-2x"></i></a></li>
+            <li><a href="#"><i style="color:red" class="fa-brands fa-youtube fa-2x"></i></a></li>
+            <li><a href="#"><i style="color:orangered;" class="fa-brands fa-instagram fa-2x"></i></a></li>
+        </ul>
+        <ul>
+            <h3>CÁC CHI NHÁNH CỦA TOP FLOWERS</h3>
+            <li>371 Nguyễn Kiệm, Phường 3, Quận Gò Vấp, Tp.HCM</li>
+            <li>35-37 Hồ Hảo Hớn, Phường Cô Giang, Quận 1, Tp.HCM</li>
+        </ul>
+    </footer>
+    <nav class="scroll-top-btn">
+        <div><i style="color:white" class="fa-solid fa-angle-up fa-3x"></i></div>
+    </nav>
+    <nav id="chat-box">
+        <div id="fb-btn"><i class="fa-brands fa-facebook-messenger fa-4x"></i></div>
+        <div class="box">
+            <div class="flex">
+                <h2>CHAT VỚI TOP-FLOWERS</h2>
+                <div id="close-chat"><i class="fa-solid fa-xmark fa-2x"></i></div>
+            </div>   
+            <textarea name="" id="" cols="30" rows="5" placeholder="Nội dung"></textarea>
+            <button>Gửi</button>
+        </div>
+    </nav>
+</body>
+</html>
